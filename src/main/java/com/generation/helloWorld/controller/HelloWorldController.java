@@ -13,9 +13,15 @@ public class HelloWorldController {
         return "Hello World!";
     }
 
+    @GetMapping("/bsm")
     public String Bsm(){
         return "Persistência \nOrientação ao Detalhe \nOrientação ao Futuro \nReponsabilidade Pessoal" +
                 "\nTrabalho em Equipe \nProatividade \nGestão do Tempo \nComunicação \nMentalidade de Crescimento" +
                 "\n";
+    }
+
+    @GetMapping("/objetivos")
+    public String Objetivos() {
+        return "Aprender mais sobre Spring e entender mais sobre frameworks e bibliotecas.";
     }
 }
